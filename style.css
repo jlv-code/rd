@@ -26,9 +26,17 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
-a {}
+a,
+a:visited,
+a:active,
+a:link {
+	color: #6e063b;
+	text-decoration: none;
+}
 
-p {}
+p {
+	margin: 10px 0 0 0;
+}
 
 img {}
 
@@ -314,7 +322,7 @@ section .inner .col-one .row .news .note a {
 section .inner .col-one .row .news .note h1 {
 	margin-top: 10px;
 	font-size: 1.1em;
-	letter-spacing: .5px;
+	letter-spacing: 0px;
 	line-height: 1.2em;
 }
 
