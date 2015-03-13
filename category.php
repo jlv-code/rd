@@ -35,7 +35,7 @@
 			</div>
 			<div class="row">
 				<div class="paging">
-					<?php the_post_paging() ?>
+					<?php the_post_paging('') ?>
 				</div>
 			</div>
 		</div>
