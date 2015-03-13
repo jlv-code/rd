@@ -119,11 +119,12 @@ header .inner .menu nav .menu-principal-container {
 
 ul#menu-principal {
 	display: flex;
-	justify-content: space-around;
+	justify-content: flex-start;
 	list-style: none;
 }
 
 ul#menu-principal li {
+	margin-right: 20px;
 	list-style: none;
 }
 
@@ -440,11 +441,12 @@ footer .inner .menu nav .menu-principal-container {
 
 ul#menu-principal-1 {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	list-style: none;
 }
 
 ul#menu-principal-1 li {
+	margin-right: 20px;
 	list-style: none;
 }
 
