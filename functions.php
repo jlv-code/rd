@@ -85,7 +85,7 @@ function new_excerpt_more($more) {
 add_filter('excerpt_more', 'new_excerpt_more');
 
 // Función que añade la funcionalidad de paginador al template
-function post_paging($posts) {
+function the_post_paging($posts) {
 	global $wp_query;
 
 	if($posts) $wp_query = $posts;

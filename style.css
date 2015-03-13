@@ -222,6 +222,8 @@ section .inner .col-one .row .important .title h1 a {
 	color: #333;
 	text-decoration: none;
 	text-align: justify;
+	letter-spacing: -1px;
+	line-height: 1.2em;
 }
 
 section .inner .col-one .row .important .title h1 a .date {
@@ -266,30 +268,30 @@ section .inner .col-one .row .important .image span a:hover {
 	border-bottom: 2px solid #eee;
 }
 
-section .inner .col-one .row .last-news {
+section .inner .col-one .row .news {
 	margin-top: 20px;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
-section .inner .col-one .row .last-news .note {
+section .inner .col-one .row .news .note {
 	margin-bottom: 20px;
 	width: 330px;
 }
 
-section .inner .col-one .row .last-news .note .image {
+section .inner .col-one .row .news .note .image {
 	position: relative;
 	display: block;
 }
 
-section .inner .col-one .row .last-news .note img {
+section .inner .col-one .row .news .note img {
 	display: block;
 	width: 330px;
 	height: auto;
 }
 
-section .inner .col-one .row .last-news .note span {
+section .inner .col-one .row .news .note span {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -301,26 +303,61 @@ section .inner .col-one .row .last-news .note span {
 	font-size: 1em;
 }
 
-section .inner .col-one .row .last-news .note a {
+section .inner .col-one .row .news .note a {
 	text-decoration: none;
 	color: #333;
 }
 
-section .inner .col-one .row .last-news .note h1 {
+section .inner .col-one .row .news .note h1 {
 	margin-top: 10px;
 	font-size: 1.1em;
 	letter-spacing: .5px;
 	line-height: 1.2em;
 }
 
-section .inner .col-one .row .last-news .note  p {
+section .inner .col-one .row .news .note  p {
 	margin-top: 10px;
 	font-size: .9em;
 }
 
+section .inner .col-one .row .paging {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+section .inner .col-one .row .paging .page-numbers {
+	margin-right: 5px;
+	padding: 5px;
+	color: #333;
+	font-size: .9em;
+	background-color: #bcbd8c;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-decoration: none;
+	-o-transition: .2s;
+	-ms-transition: .2s;
+	-moz-transition: .2s;
+	-webkit-transition: .2s;
+	transition: .2s;
+}
+
+section .inner .col-one .row .paging .page-numbers:hover{
+	color: #bcbd8c;
+	background-color: #6e063b;
+}
+
+section .inner .col-one .row .paging .current,
+section .inner .col-one .row .paging .current:hover {
+	color: #bcbd8c;
+	background-color: rgba(110,6,59,.8);
+}
+
 section .inner .col-two {
 	padding: 32px 5px 0;
-	width: 300px;
+	width: 290px;
 	background-color: #eee;
 }
 
@@ -357,7 +394,8 @@ section .inner .col-two {
 
 .widget ul li a {
 	color: #333;
-	font-size: .9em;
+	font-size: .8em;
+	font-weight: 700;
 	text-decoration: none;
 }
 

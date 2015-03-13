@@ -32,7 +32,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="last-news">
+				<div class="news">
 					<?php $d = new WP_Query(array('category__not_in'=>array(8), 'posts_per_page'=>'4')); ?>
 					<?php if ($d->have_posts()): while ($d->have_posts()): $d->the_post(); ?>
 						<div class="note">
