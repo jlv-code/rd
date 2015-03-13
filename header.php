@@ -26,6 +26,21 @@
 	<meta name="keywords" content="revista, diplomatica, noticias, venezuela" />
 	<meta name="copyright" content="Revista Diplomática de Venezuela | <?php print date('Y') ?>" />
 
+	<script type="text/javascript">
+		WebFontConfig = {
+			google: { families: [ 'PT+Sans+Narrow::latin', 'Open+Sans::latin', 'Open+Sans+Condensed:300:latin', 'Oswald::latin' ] }
+		};
+
+		(function() {
+			var wf = document.createElement('script');
+			wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+			wf.type = 'text/javascript';
+			wf.async = 'true';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(wf, s);
+		})();
+	</script>
+
 	<?php wp_head() ?>
 
 </head>
@@ -34,5 +49,12 @@
 	<div id="wrap">
 		<div id="content">
 			<div class="inner">
-				
-					
+				<header>
+					<div class="inner">
+						<div class="logo"><img src="<?php echo get_template_directory_uri() ?>/static/images/logo.png" alt="Revista Diplomática de Venezuela"></div>
+						<div class="menu">
+							<nav><?php wp_nav_menu(array('theme_location' => 'main')); ?></nav>
+						</div>
+						<div class="search"><?php get_search_form() ?></div>
+					</div>
+				</header>

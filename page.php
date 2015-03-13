@@ -10,6 +10,6 @@
 
 <?php get_header() ?>
 
-
+<div><?php the_breadcrumb() ?></div>
 
 <?php get_footer() ?>

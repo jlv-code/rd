@@ -4,11 +4,7 @@
 		@author: José V.
 		@file: functions.php
 		@version: 1.0
-	 */
-
-?>
-
-<?php  
+	 */ 
 
 // Set content width value based on the theme's design
 if ( ! isset( $content_width ) )
@@ -45,7 +41,7 @@ add_action( 'after_setup_theme', 'theme_features' );
 function nav_menus() {
 
 	$locations = array(
-		'primary' => 'Principal',
+		'main' => 'Principal',
 	);
 	register_nav_menus( $locations );
 
@@ -102,3 +98,32 @@ function post_paging($posts) {
 		'total' => $wp_query->max_num_pages
 	) );
 }
+
+function the_breadcrumb() {
+	echo '<a href="', get_option('home'), '">', 'Inicio', "</a>";
+	if (is_category() || is_single()) {
+		echo " » ";
+		the_category('title_li=');
+		if (is_single()) {
+			echo " » ";
+			the_title();
+		}
+	} elseif (is_page()) {
+		echo " » ", the_title();
+	}
+}
+
+function sidebars() {
+	register_sidebar(array(
+		'id' => 'sidebar',
+		'name' => 'Barra Lateral',
+		'description' => 'Esta sección se muestra en todo el sitio web.',
+		'before_widget' => '<div class="widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h2>',
+		'after_title' => '</h2>',
+		'empty_title'=> '',
+	));
+} 
+// adding sidebars to Wordpress (these are created in functions.php)
+add_action( 'widgets_init', 'sidebars' );
