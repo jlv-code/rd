@@ -187,6 +187,8 @@ section .inner .col-one .row {
 section .inner .col-one .row .breadcrumb {
 	padding: 5px 0;
 	border-bottom: 1px solid #ccc;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1em;
 }
 
 section .inner .col-one .row .breadcrumb a {
@@ -354,6 +356,70 @@ section .inner .col-one .row .paging .current,
 section .inner .col-one .row .paging .current:hover {
 	color: #bcbd8c;
 	background-color: rgba(110,6,59,.8);
+}
+
+article {
+	display: block;
+	margin-top: 20px;
+}
+
+article .note {
+	display: block;
+}
+
+article .note .image {
+	position: relative;
+	display: block;
+}
+
+article .note .image img {
+	display: block;
+	width: 680px;
+	height: auto;
+}
+
+article .note .image h1 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 10px;
+	color: #eee;
+	background-color: rgba(30,30,30,.9);
+	font-size: 1.3em;
+}
+
+article .note .meta {
+	display: flex;
+	justify-content: flex-start;
+	background-color: #333;
+}
+
+article .note .meta span {
+	margin-left: 10px;
+	padding: 10px 0;
+	color: #eee;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1em;
+}
+
+article .note .meta span a {
+	margin-right: 1px;
+	padding: 0 3px;
+	color: #6e063b;
+	background-color: #bcbd8c;
+	text-decoration: none;
+}
+
+article .note .content {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+article .note .content p {
+	margin: 10px 0 0 0;
+	color: #333;
+	font-size: .9em;
 }
 
 section .inner .col-two {
