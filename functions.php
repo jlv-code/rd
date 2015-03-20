@@ -103,7 +103,7 @@ function the_breadcrumb() {
 	echo '<a href="', get_option('home'), '">', 'Inicio', "</a>";
 	if (is_category() || is_single()) {
 		echo " » ";
-		the_category('title_li=');
+		the_category(' - ');
 		if (is_single()) {
 			echo " » ";
 			the_title();

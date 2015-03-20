@@ -375,6 +375,12 @@ article .note {
 	display: block;
 }
 
+article .note > h1 {
+	padding: 0 0 10px 0;
+	color: #1e1e1e;
+	font-size: 1.3em;
+}
+
 article .note .image {
 	position: relative;
 	display: block;
