@@ -242,8 +242,9 @@ section .inner .col-one .row .important {
 }
 
 section .inner .col-one .row .important {
-	display: flex;
-	flex-direction: column;
+	display: block;
+	/*display: flex;
+	flex-direction: column;*/
 }
 
 section .inner .col-one .row .important .title {
