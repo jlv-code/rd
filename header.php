@@ -52,7 +52,7 @@
 				<header>
 					<div class="inner">
 						<div class="logo"><img src="<?php echo get_template_directory_uri() ?>/static/images/logo.png" alt="Revista Diplomática de Venezuela"></div>
-						<div class="menu">
+						<div class="navmenu">
 							<nav><?php wp_nav_menu(array('theme_location' => 'main')); ?></nav>
 						</div>
 						<div class="search"><?php get_search_form() ?></div>

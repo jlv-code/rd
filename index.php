@@ -18,17 +18,7 @@
 			</div>
 			<div class="row">
 				<div class="important">
-					<?php $d = new WP_Query(array('category_name'=>'Importante', 'posts_per_page'=>'1')); ?>
-					<?php if ($d->have_posts()): while ($d->have_posts()): $d->the_post(); ?>
-					<div class="title">
-						<h1><a href="<?php the_permalink() ?>"><span class="date"><?php the_time('d M') ?></span> - <?php the_title() ?></a></h1>
-					</div>
-					<div class="image">
-						<?php the_post_thumbnail('full') ?>
-						<span><a href="<?php the_permalink() ?>">Ver</a></span>
-					</div>
-					<?php endwhile; endif; ?>
-					<?php wp_reset_postdata() ?>
+					<?php echo do_shortcode("[huge_it_slider id='1']"); ?>
 				</div>
 			</div>
 			<div class="row">

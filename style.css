@@ -97,16 +97,17 @@ header:after {
 }
 
 header .inner {
-	display: flex;
+	/*display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: stretch;
+	align-items: stretch;*/
 	margin: 0 auto;
 	width: 1000px;
 	height: 130px;
 }
 
 header .inner .logo {
+	display: inline-block;
 	width: 200px;
 }
 
@@ -116,13 +117,16 @@ header .inner .logo img {
 	border-right: 5px solid #6e063b;
 }
 
-header .inner .menu {
+header .inner .navmenu {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 60px;
+	margin-left: 40px;
 	width: 450px;
 }
 
 header .inner .menu nav {
 	display: block;
-	margin-top: 60px;
 }
 
 header .inner .menu nav .menu-principal-container {
@@ -130,12 +134,14 @@ header .inner .menu nav .menu-principal-container {
 }
 
 ul#menu-principal {
-	display: flex;
+	/*display: flex;
 	justify-content: flex-start;
-	list-style: none;
+	list-style: none;*/
+	display: block;
 }
 
 ul#menu-principal li {
+	display: inline-block;
 	margin-right: 20px;
 	list-style: none;
 }
@@ -157,7 +163,9 @@ ul#menu-principal li a:hover {
 }
 
 header .inner .search {
-	margin-top: 52px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 55px;
 	width: 300px;
 }
 
@@ -179,16 +187,33 @@ section {
 }
 
 section .inner {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
+
+	-webkit-box-pack: justify;
+	-moz-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
+
+	-webkit-align-content: stretch;
+	-ms-flex-line-pack: stretch;
 	align-content: stretch;
+	-webkit-box-align: stretch;
+	-moz-box-align: stretch;
+	-webkit-align-items: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+	
 	margin: 10px auto 0;
 	width: 1000px;
 }
 
 section .inner .col-one {
-	display: flex;
-	flex-direction: column;
+	display: block;
 	width: 680px;
 }
 
@@ -284,14 +309,53 @@ section .inner .col-one .row .important .image span a:hover {
 }
 
 section .inner .col-one .row .news {
-	margin-top: 20px;
-	display: flex;
+	/*display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;
+	flex-wrap: wrap;*/
+
+	/*display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-box-pack: justify;
+	-moz-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+
+	-webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
+	-webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;*/
+
+	/*-webkit-align-content: stretch;
+	-ms-flex-line-pack: stretch;
+	align-content: stretch;
+	-webkit-box-align: stretch;
+	-moz-box-align: stretch;
+	-webkit-align-items: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;*/
+
+	display: inline-block;
+	margin-top: 20px;
+	width: 100%;
 }
 
 section .inner .col-one .row .news .note {
+	display: inline-table;
+	vertical-align: top;
 	margin-bottom: 20px;
+	margin-right: 8px;
 	width: 330px;
 }
 
@@ -336,10 +400,12 @@ section .inner .col-one .row .news .note  p {
 }
 
 section .inner .col-one .row .paging {
+	display: inline-block;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	display: flex;
-	justify-content: flex-start;
+	/*display: flex;
+	justify-content: flex-start;*/
+	width: 100%;
 }
 
 section .inner .col-one .row .paging .page-numbers {
@@ -504,23 +570,24 @@ footer {
 }
 
 footer .inner {
-	display: flex;
+	/*display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: stretch;
+	align-items: stretch;*/
 	margin: 0 auto;
 	width: 1000px;
 	height: 130px;
 }
 
 footer .inner .menu {
-	display: block;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 30px;
 	width: 400px;
 }
 
 footer .inner .menu nav {
 	display: block;
-	margin-top: 55px;
 }
 
 footer .inner .menu nav .menu-principal-container {
@@ -528,12 +595,14 @@ footer .inner .menu nav .menu-principal-container {
 }
 
 ul#menu-principal-1 {
-	display: flex;
-	justify-content: flex-start;
+	/*display: flex;
+	justify-content: flex-start;*/
+	display: block;
 	list-style: none;
 }
 
 ul#menu-principal-1 li {
+	display: inline-block;
 	margin-right: 20px;
 	list-style: none;
 }
@@ -555,6 +624,9 @@ ul#menu-principal-1 li a:hover {
 }
 
 footer .inner .social {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 5px;
 	width: 250px;
 }
 
@@ -565,6 +637,8 @@ footer .inner .social img {
 }
 
 footer .inner .logo {
+	display: inline-block;
+	vertical-align: top;
 	width: 300px;
 }
 
