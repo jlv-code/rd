@@ -236,9 +236,11 @@ section .inner .col-one .row .breadcrumb a {
 }
 
 section .inner .col-one .row .important {
-	margin-top: 10px;
-	width: 100%;
+	margin-top: 15px;
+	padding-bottom: 15px;
+	width: 680px;
 	border-bottom: 5px solid #6e063b;
+	overflow: hidden;
 }
 
 section .inner .col-one .row .important {
@@ -247,7 +249,93 @@ section .inner .col-one .row .important {
 	flex-direction: column;*/
 }
 
-section .inner .col-one .row .important .title {
+section .inner .col-one .row .important .inner {
+	position: relative;
+	display: block;
+	margin: 0;
+	width: 680px;
+	height: 220px;
+}
+
+section .inner .col-one .row .important .inner .slide {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 0;
+	opacity: 0;
+	width: 400px;
+}
+
+section .inner .col-one .row .important .inner .current {
+	z-index: 1;
+	opacity: 1;
+}
+
+section .inner .col-one .row .important .inner .slide a {
+	display: block;
+}
+
+section .inner .col-one .row .important .inner .slide a img {
+	display: block;
+	width: 400px;
+	height: 220px;
+}
+
+section .inner .col-one .row .important .inner .slide .info {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: block;
+	padding: 5px;
+	background-color: rgba(30,30,30,.8);
+}
+
+section .inner .col-one .row .important .inner .slide .info .s-title {
+	display: none;
+}
+
+section .inner .col-one .row .important .inner .slide .info .s-time {
+	margin-right: 10px;
+	color: #fff;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: .8em;
+}
+
+section .inner .col-one .row .important .inner .slide .info .s-excerpt {
+	color: #fff;
+	font-size: .8em;
+	font-weight: 600;
+	line-height: 1em;
+}
+
+section .inner .col-one .row .important .inner .nav {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 270px;
+}
+
+section .inner .col-one .row .important .inner .nav .thumb {
+	margin-top: 15px;
+	font-family: 'Oswald', sans-serif;
+	font-size: .9em;
+	cursor: pointer;
+	opacity: .6;
+}
+
+section .inner .col-one .row .important .inner .nav .thumb:first-child {
+	margin-top: 0;
+}
+
+section .inner .col-one .row .important .inner .nav .current {
+	opacity: 1;
+}
+
+/*section .inner .col-one .row .important .title {
 	display: block;
 	margin-bottom: 10px;
 }
@@ -307,7 +395,7 @@ section .inner .col-one .row .important .image span a {
 
 section .inner .col-one .row .important .image span a:hover {
 	border-bottom: 2px solid #eee;
-}
+}*/
 
 section .inner .col-one .row .news {
 	/*display: flex;

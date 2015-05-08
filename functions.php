@@ -64,8 +64,8 @@ add_action( 'wp_enqueue_scripts', 'styles' );
 // Register Script
 function scripts() {
 
-	//wp_register_script( 'fb_script', get_template_directory_uri().'/static/js/jquery.fancybox.js', array( 'jquery' ), '1', true );
-	//wp_enqueue_script( 'fb_script' );
+	wp_register_script( 'script', get_template_directory_uri().'/static/js/jquery.slider.js', array( 'jquery' ), '1', true );
+	wp_enqueue_script( 'script' );
 	
 }
 
