@@ -266,6 +266,7 @@ section .inner .col-one .row .important .inner .slide {
 	z-index: 0;
 	opacity: 0;
 	width: 400px;
+	overflow: hidden;
 }
 
 section .inner .col-one .row .important .inner .current {
@@ -280,7 +281,7 @@ section .inner .col-one .row .important .inner .slide a {
 section .inner .col-one .row .important .inner .slide a img {
 	display: block;
 	width: 400px;
-	height: 220px;
+	height: auto;
 }
 
 section .inner .col-one .row .important .inner .slide .info {
